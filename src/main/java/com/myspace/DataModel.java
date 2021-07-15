@@ -6,12 +6,24 @@ package com.myspace;
 
 public class DataModel implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public DataModel() {
-    }
+	@org.kie.api.definition.type.Label(value = "Name")
+	private java.lang.String name;
 
+	public DataModel() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public DataModel(java.lang.String name) {
+		this.name = name;
+	}
 
 }
