@@ -1,9 +1,0 @@
-import java.lang.Number;
-
-rule "Rules"
-dialect "mvel"
-when
-trade : Trade( buySellCode == "buy" )
-then
-trade.setBuySideAccountIdentifier( "20" );
-end
