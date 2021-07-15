@@ -11,6 +11,8 @@ public class Trade implements java.io.Serializable {
 	private java.lang.String buySellCode;
 	private java.lang.String buySideAccountIdentifier;
 
+	private java.lang.String test;
+
 	public Trade() {
 	}
 
@@ -31,10 +33,19 @@ public class Trade implements java.io.Serializable {
 		this.buySideAccountIdentifier = buySideAccountIdentifier;
 	}
 
+	public java.lang.String getTest() {
+		return this.test;
+	}
+
+	public void setTest(java.lang.String test) {
+		this.test = test;
+	}
+
 	public Trade(java.lang.String buySellCode,
-			java.lang.String buySideAccountIdentifier) {
+			java.lang.String buySideAccountIdentifier, java.lang.String test) {
 		this.buySellCode = buySellCode;
 		this.buySideAccountIdentifier = buySideAccountIdentifier;
+		this.test = test;
 	}
 
 }
